@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Manu</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+
+  <div class="panel">
+    <div class="panel-head">
+      <h2>Online-Order Terminal</h2>
+      <p>Please select all the items you wish to add to your<br/> cart then push the "checkout" button below!</p>
+    </div>
+    <div class="panel-body">
+      <form name="elem" >
+        <div>
+          <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" value="Greek Bananas ">
+          <label for="checkbox-1" class="checkbox-custom-label">Greek Bananas $</label>
+          <p id="price1" value="$30.30">30.30</p>
+        </div>
+        <div>
+          <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" value="Organic Milk ">
+          <label for="checkbox-2" class="checkbox-custom-label">Organic Milk $</label>
+                    <p id="price2" value="$5.99">5.99</p>
+        </div>
+         <div>
+          <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" value="Golden Apples ">
+          <label for="checkbox-3" class="checkbox-custom-label">Golden Apples $</label>
+           <p id="price3" value="$1.99">1.99</p>
+        </div>
+         <div>
+          <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" value="Fresh Oranges ">
+          <label for="checkbox-4" class="checkbox-custom-label">Fresh Oranges $</label>
+           <p id="price4" value="$22.00">22.00</p>
+        </div>
+         <div>
+          <input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" value="Canadian Eggs ">
+          <label for="checkbox-5" class="checkbox-custom-label">Canadian Eggs $</label>
+           <p id="price5" value="$3.43">3.43</p>
+        </div>
+         <div>
+          <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" value="Toilet Paper ">
+          <label for="checkbox-6" class="checkbox-custom-label">Toilet Paper $</label>
+           <p id="price6" value="$6.55">6.55</p>
+        </div>
+         <div>
+          <input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" value="Hershey Bars ">
+          <label for="checkbox-7" class="checkbox-custom-label">Hershey Bars $</label>
+           <p id="price7" value="$2.25">2.25</p>
+        </div>
+         <div>
+          <input id="checkbox-8" class="checkbox-custom" name="checkbox-8" type="checkbox" value="Lavazza Coffee ">
+          <label for="checkbox-8" class="checkbox-custom-label">Lavazza Coffee $</label>
+           <p id="price8" value="$8.91">8.91</p>
+        </div>
+         <div>
+          <input id="checkbox-9" class="checkbox-custom" name="checkbox-9" type="checkbox" value="LG 60 TV ">
+          <label for="checkbox-9" class="checkbox-custom-label">LG 60 TV $</label>
+           <p id="price9" value="$575.99">575.99</p>
+        </div>
+         <div>
+          <input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox" value="Acer Predator ">
+          <label for="checkbox-10" class="checkbox-custom-label">Acer Predator $</label>
+           <p id="price10" value="$9,000">9000</p>
+        </div>
+        <br><span class="gettext"></span>
+      </form>
+    </div>
+    <div style="text-align:center;">
+    <button type="button" data-label="Checkout!" onClick="getCheckboxvalue();">Checkout!</button>
+</div>
+
+    <div class="container">
+  <div class="tab"></div>
+  <div class="paid"><p>Receipt Paid successfully</p></div>
+  <div class="receipt">
+  <div class="paper">
+    <div class="title">Online-Order Terminal Receipt</div>
+    <div class="date">Date: 11/17/2017</div>    
+    <table>
+      <tbody>
+<!--         <tr><td>2 x Coffee</td><td class="right">$10</td></tr> -->
+        <div>
+    <p id="listItems"></p>
+    </div>
+    <div>
+    <p id="pResult"></p>
+    </div>
+    <div>
+    <p id="pResult2"></p>
+    </div>
+    <div>
+    <p id="listItems"></p>
+    </div>
+        <tr><td colspan="2" class="center"><input type="button" value="Pay Now" onClick="pay()"/></td></tr>
+    </tbody>
+    </table>
+    <div class="sign center">
+      <div class="barcode"></div>
+      <br/>
+      0123456789
+      <br/>
+      <div class="thankyou">
+      Thank you for your business!
+      </div>
+    </div>
+  </div>
+  
+  <div>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
